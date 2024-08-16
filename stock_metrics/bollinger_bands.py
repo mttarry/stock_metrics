@@ -18,4 +18,5 @@ def calc_bollinger_bands(data: pd.Series, window=20, std=2) -> pd.DataFrame:
     std = middle.rolling(window=window).std()
     upper = middle + (2 * std)
     lower = middle - (2 * std)
-    return pd.DataFrame({'Upper Band': upper, 'Middle Band': middle, 'Lower Band': lower})
+
+    return pd.DataFrame({'Upper Band': upper, 'Lower Band': lower})

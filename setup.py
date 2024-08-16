@@ -6,8 +6,9 @@ setup(
     packages=find_packages(),
     install_requires=[
         'pandas',
-        'yfinance'
+        'yfinance',
+        'matplotlib'
     ],
     description='A library for calculating stock metrics.',
-    author='Matt Tarry',
+    author='Matt Tarry',    
 )
